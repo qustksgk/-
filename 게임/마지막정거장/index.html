@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>마지막 정거장</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <div><p class="eyebrow">TIME LOOP MYSTERY</p><h1>마지막 정거장</h1></div>
+      <div class="timer-wrap"><span>남은 시간</span><strong id="timer">20:00</strong></div>
+    </header>
+    <section class="game-area" aria-label="게임 화면">
+      <canvas id="game" width="960" height="540" aria-label="마지막 정거장 지도"></canvas>
+      <aside class="clues-panel"><h2>단서</h2><p class="loop-count" id="loop-count">반복 1회차</p><ul id="clue-list"><li class="empty">아직 얻은 단서가 없습니다.</li></ul></aside>
+      <div class="message" id="message" role="status">막차는 멈췄고, 역은 낯설게 조용하다.</div>
+      <div class="hint">WASD / 방향키 이동 · E 또는 Space 조사 · R 시간 되돌리기</div>
+      <div class="intro-screen" id="intro-screen">
+        <div class="intro-card">
+          <p class="eyebrow">WELCOME, PASSENGER</p>
+          <h2>마지막 정거장에 오신 것을 환영합니다</h2>
+          <p>막차는 멈췄고, 이 역의 시간은 <strong>20분</strong>마다 반복됩니다. 단서는 사라지지 않습니다.</p>
+          <div class="manual-grid">
+            <div><b>이동</b><span>WASD 또는 방향키</span></div>
+            <div><b>조사</b><span>E 또는 Space</span></div>
+            <div><b>반복</b><span>R 또는 아래 버튼</span></div>
+          </div>
+          <ol>
+            <li>학생에게 말을 걸어 숨겨진 열쇠의 위치를 알아내세요.</li>
+            <li>시간을 되돌린 뒤 자판기 아래를 조사하세요.</li>
+            <li>보관함과 역무실을 열어 CCTV의 진실을 확인하세요.</li>
+          </ol>
+          <button id="start-button" class="start-button" type="button">조사 시작하기 <small>ENTER</small></button>
+        </div>
+      </div>
+    </section>
+    <footer><span>주변의 인물과 물건을 조사하세요.</span><button id="reset-button" type="button">R · 시간 되돌리기</button></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
