@@ -1,0 +1,2 @@
+.input-controls{position:absolute;z-index:2;right:14px;top:14px;display:grid;gap:6px;width:190px;padding:8px;border:1px solid #704137;background:#120909d9;color:#d8c4b6;font:600 10px Orbitron,system-ui}.input-controls label{display:grid;grid-template-columns:1fr auto;gap:4px}.input-controls input{grid-column:1/-1;width:100%;accent-color:#d3543b}.input-controls output{color:#ffd28a}@media(max-width:640px){.input-controls{display:none}}
+.hud{grid-template-columns:repeat(4,1fr)}.hud div:first-child{color:#61b7d8}@media(max-width:640px){.hud{grid-template-columns:repeat(2,1fr)}}
